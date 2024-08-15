@@ -43,30 +43,28 @@ document.getElementById("calendar").innerHTML = createCalendar(thisDay);
 
 function createCalendar(calDate){
    let calendarHTML = "<table id='calendar_table'>";
-   calendarHTML += calCaption(calDate);
-   calendarHTML += calWeekdayRow();
-   calendarHTML += calDays(calDate);
-   calendarHTML += "</table>";
+      calendarHTML += calCaption(calDate); // August 24, 2018
+      calendarHTML += calWeekdayRow();
+      calendarHTML += calDays(calDate); // August 24, 2018
+      calendarHTML += "</table>";
    return calendarHTML;
 }
 
 // function to write the calendar caption
 
 function calCaption(calDate){
-   let monthName = ["January", "February", "March", "April", "May","June","July","August","September","Octuber","November","Dicember"]
-
+   let monthName = ["January", "February", "March", "April", 
+                     "May","June","July","August","September",
+                     "Octuber","November","Dicember"];
 
 // Determine the current month
-
-let thisMonth = calDate.getMonth();
+   let thisMonth = calDate.getMonth(); // August 24, 2018
 
 // Determine the current year
-
-let thisYear = calDate.getFullYear();
+   let thisYear = calDate.getFullYear(); // August 24, 2018
 
 // Write the caption
-
-return "<caption>" + monthName[thisMonth] + " " + thisYear + "</caption>";
+   return "<caption>" + monthName[thisMonth] + " " + thisYear + "</caption>";
 
 }
 
@@ -102,7 +100,7 @@ function daysInMonth(calDate) {
       if ((thisYear % 100 != 0) || (thisYear % 400 === 0)) {
          dayCount[1] = 29;
       }
-   }
+   } 
 // Return the number of days for the current month
    return dayCount[thisMonth];
 }
@@ -111,7 +109,7 @@ function daysInMonth(calDate) {
 function calDays(calDate) {
 
    // Determine the starting day of the month
-   let day = new Date(calDate.getFullYear(), calDate.getMonth(), 1);
+   let day = new Date(calDate.getFullYear(), calDate.getMonth(), 1); // August 24, 2018
    let weekDay = day.getDay();
    
    // Write blank cells preceding the starting day

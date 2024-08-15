@@ -20,6 +20,8 @@
    <link href="lht_reset.css" rel="stylesheet" />
    <link href="lht_styles.css" rel="stylesheet" />
    <link href="lht_events.css" rel="stylesheet" />  
+   <script src="lht_list.js" async ></script>
+   <script src="lht_table_txt.js" async></script>
 </head>
 
 <body>
@@ -37,16 +39,17 @@
       </nav>
    </header>
    
-   <section>
-      <article>
-         <h1>At the Theater</h1>   
+   <div class="front">
+      <section>
+         <article>
+            <h1>At the Theater</h1>   
          <p>Great shows are coming to the Lyman Hall Theater in the upcoming weeks. 
             The Broadway Touring Company of <a href="#">Cabaret</a> arrives for four
             performances, featuring Tony-award winning actress Kayla 
             James. Tickets are limited, so be sure to <a href="#">order
-            online</a> and by calling the LHT boxoffice.
-         </p>
-         <p>Enjoy a stunning multimedia event with Edward Lee's <a href="#">Visions
+               online</a> and by calling the LHT boxoffice.
+            </p>
+            <p>Enjoy a stunning multimedia event with Edward Lee's <a href="#">Visions
             of Light and Dreams</a> featuring sound, video, and interactive
             demonstrations of the latest innovations in film and theater.
          </p>
@@ -60,9 +63,12 @@
             brunch, join us for <a href="#">Classics Brunch</a>.
          </p>
       </article>
-       
    </section>
    
+   <div id=eventList></div>
+</div>
+   
+
    <footer>
       <nav>
          <ul>

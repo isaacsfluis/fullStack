@@ -8,6 +8,7 @@
    The eventDates array contains the dates of events at the LHT
    The eventDescriptions array contains the event names
    The eventPrices array contains the cost of the events
+   let thisDay = new Date("July 29, 2018");
 */
 
 var eventDates = ["July 29, 2018 11:00:00", "July 30, 2018 19:00:00", "July 31, 2018 19:30:00", 
@@ -22,7 +23,7 @@ var eventDates = ["July 29, 2018 11:00:00", "July 30, 2018 19:00:00", "July 31, 
                  "August 31, 2018 19:30:00", "September 1, 2018 19:00:00", "September 2, 2018 11:00:00", 
                  "September 4, 2018 19:00:00", "September 5, 2018 19:00:00", "September 6, 2018 19:00:00", 
                  "September 7, 2018 19:00:00", "September 8, 2018 19:00:00", "September 9, 2018 11:00:00",
-                 "September 10, 2018 19:00:00", "September 12, 2018 20:00:00", "September 13, 2018 20:00:00"];
+                 "September 10, 2018 19:00:00", "September 12, 2018 20:00:00", "September 13, 2018 20:00:00"];// August 24, 2018
                  
 var eventDescriptions = ["Classics Brunch", "Lasers and Light", "Dixieland Jazz Masters", 
                         "Classic Cinema: Wings", "The Future is Prologue", "American Favorites", 
@@ -41,3 +42,4 @@ var eventPrices = ["$12", "$12/$18/$24", "$22/$31/$47", "$5", "$18/$24/$36", "$2
                  "$24/$36/$48", "$16/$24", "$12", "free", "free", "$22/$36/$48", "$48/$64/$88", "$12", 
                  "$18/$32", "$24/$36", "$48/$64/$88", "$48/$64/$88", "$48/$64/$88", "$12", "$12",
                  "$18/$28/$36", "$32/$48/$64"];
+

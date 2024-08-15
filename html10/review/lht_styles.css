@@ -118,6 +118,10 @@ div#eventList {
    margin: 20px;
 }
 
+.front {
+   display: grid;
+   grid-template-columns: 50% 50%
+}
 
 
 /* Footer styles */   
