@@ -1,0 +1,131 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Luis Isaacs
+   Date:   
+   
+   Filename: lake_styles.css
+
+*/
+
+@charset "UTF-8";
+@import url('lake_layout.css');
+
+@font-face {
+   font-family: Champagne;
+   src: url('cac_champagne') format('woff');
+   src: url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+   font-family: Dobkin;
+   src: url('DobkinPlain.woff') format('woff');
+   src: url('DobkinPlain.ttf') format('truetype');
+}
+
+/* Structural Styles */
+
+html {
+   background-color: rgb(210, 208, 152);
+}
+
+
+/* Body Header Styles */
+
+body{
+   background-color: rgb(251, 249, 239);
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Navigation Styles */
+
+header>nav>ul {
+   list-style: none;
+   line-height: 2em;
+   font-size: 0.9em;
+   background-color: rgb(134,93,138);
+
+}
+
+header>nav>ul>li>a:link,
+nav>ul>li>a:visited {
+   color: white;
+   text-decoration: none;
+
+}
+
+header>nav>ul>li>a:hover,
+nav>ul>li>a:active {
+   color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.5);
+
+}
+
+
+
+#leftcol > h1{
+   font-family: Champagne, cursive, normal;
+   font-size: 2.9em;
+   padding-left: 10px;
+}
+
+
+#leftcol > p{
+   padding-left: 10px;
+}
+
+/* Aside left */
+
+#leftcol > aside:nth-child(7){
+   background-color: rgb(231,170,157);
+   text-align: center;
+}
+
+
+
+#leftcol > aside:nth-child(7) > ul > li{
+   text-align: left;
+   font-size: 0.8em;
+}
+
+/* Aside right */
+
+#leftcol > aside:nth-child(8){
+   background-color: rgb(216,191,130);
+}
+
+#leftcol > aside:nth-child(8) > h1{
+   text-align: center;
+
+}
+
+#leftcol > aside:nth-child(8) > h2{
+   text-align: left;
+   font-size: 1.2em;
+   font-weight: normal;
+   padding-left: 5px;
+
+}
+
+#leftcol > aside:nth-child(8) > p{
+   padding-left: 15px;
+   font-size: 0.8em;
+}
+
+/* Section right */
+
+#rightcol{
+   background-color: rgb(222,205,228);
+}
+
+/*  Footer */
+
+footer{
+   background-color: rgb(94,93,99);
+   text-align: center;
+   color: white;
+   padding: 5px;
+}
