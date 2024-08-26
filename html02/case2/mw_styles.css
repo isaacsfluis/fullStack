@@ -1,0 +1,127 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 2
+   
+   Bike the Mountains Tour Style Sheet
+    Author: Luis Isaacs
+    Date:   8/25/2024 
+   
+   Filename: mw_styles.css
+
+*/
+
+@charset "utf-8";
+
+/* Structural Styles */
+
+html {
+   background-color: rgb(173, 189, 227);
+}
+
+body {
+   background-color: rgb(227, 210, 173);
+   font-family: 'Century Gothic', sans-serif;
+}
+
+body footer {
+   background-color: rgb(208, 184, 109);
+   padding-top: 6px;
+}
+
+address {
+   font-weight: normal;
+   font-size: 0.9em;
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+/* Heading Styles */
+
+h1,
+h2 {
+   font-weight: normal;
+}
+
+/* Navigation Styles */
+
+nav>ul {
+   list-style: none;
+   line-height: 2em;
+   font-size: 0.9em;
+
+}
+
+nav>ul>li>a:link,
+nav>ul>li>a:visited {
+   color: rgb(43, 59, 125);
+   text-decoration: none;
+
+}
+
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+   color: rgb(212, 35, 35);
+
+}
+
+
+/* Article Styles */
+
+#tour_summary h1 {
+   font-size: 2.2em;
+   letter-spacing: 0.2em;
+}
+
+#tour_summary {
+   font-size: 1.1em;
+}
+
+#tour_summary p:first-of-type::first-line {
+   font-size: 1.2em;
+   font-variant: small-caps;
+}
+
+
+/* Aside Styles */
+
+aside h1 {
+   font-size: 1.2em;
+
+}
+
+aside h2 {
+   font-size: 0.9em;
+}
+
+aside p {
+   font-size: 0.8em;
+
+}
+
+aside h2:nth-of-type(odd),
+aside p:nth-of-type(odd) {
+   color: rgb(79, 91, 40);
+   /* Color gris (o verde oliva) */
+}
+
+aside h2:nth-of-type(even),
+aside p:nth-of-type(even) {
+   color: rgb(81, 95, 175);
+   /* Color azul */
+}
+
+
+/* Blockquote Styles */
+
+blockquote {
+   background-color: rgb(173, 189, 227);
+   color: rgba(255, 255, 255, 0.65);
+   padding-top: 2.5px;
+   padding-bottom: 2.5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding: 2.5px 10px;
+
+}
