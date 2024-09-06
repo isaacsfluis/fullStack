@@ -44,13 +44,14 @@ function playDrawPoker() {
    // Enable the Draw and Stand buttons after the deal
    dealButton.addEventListener("click", function () {
       if (pokerGame.currentBank >= pokerGame.currentBet) {
+         handValueText.textContent = "";
          disableObj(dealButton);
          disableObj(betSelection);
          enableObj(drawButton);
          enableObj(standButton);
          bankBox.value = pokerGame.placeBet();
 
-         
+
 
          // Deal cards into the poker hand after confirming
          // there are at least 10 cards in the deck
@@ -100,12 +101,26 @@ function playDrawPoker() {
          }
          cardImages[i].onclick = null;
       }
+
+      // Evaluate the hand drawn by user
+      handValueText.textContent = myHand.handType();
+
+      // Pay off the final hand
+      bankBox.value = pokerGame.payout(myHand.handOdds());
+
    });
    standButton.addEventListener("click", function () {
       enableObj(dealButton);
       enableObj(betSelection);
       disableObj(drawButton);
       disableObj(standButton);
+
+      // Evaluate the hand drawn by user
+      handValueText.textContent = myHand.handType();
+
+      // Pay off the final hand
+      bankBox.value = pokerGame.payout(myHand.handOdds());
+
    });
 
    //Restart the game when the Reset button is clicked
