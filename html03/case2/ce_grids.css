@@ -1,0 +1,90 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 2
+   
+   Style Sheet for Grids used in the Costume Expressions Front Page
+   Author: Luis Isaacs
+   Date:   9/10/2024
+   
+   Filename: ce_grids.css
+
+*/
+
+/* Grid Rows Styles */
+
+/* Estilo para los elementos con la clase row */
+.row {
+   width: 100%; /* Ancho del 100% del contenedor */
+   /* Otros estilos opcionales pueden ir aquí */
+}
+
+/* Clearfix para los elementos con la clase row */
+.row::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* Grid Columns Styles */
+
+/* Selecciona todos los divs con clases que comienzan con 'column' y flótalos a la izquierda */
+div[class^="column"] {
+   float: left;
+}
+
+/* Establece el ancho de cada columna basado en la clase */
+.column100 {
+   width: 100%;
+}
+
+.column50 {
+   width: 50%;
+}
+
+.column33 {
+   width: 33.33%;
+}
+
+.column67 {
+   width: 66.67%;
+}
+
+.column25 {
+   width: 25%;
+}
+
+.column75 {
+   width: 75%;
+}
+
+.column20 {
+   width: 20%;
+}
+
+.column40 {
+   width: 40%;
+}
+
+.column60 {
+   width: 60%;
+}
+
+.column80 {
+   width: 80%;
+}
+
+/* Grid Spacing Styles */
+
+/* Aplica el modelo de caja border-box a las clases específicas */
+.container,
+.row,
+[class^="column"],
+.cell,
+.cell a {
+    box-sizing: border-box;
+}
+
+
+
