@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Review Assignment
+   
+   Design Style Sheet for Tree and Book Family Home Page
+   Author: Luis Isaacs
+   Date:   9/12/2024
+   
+   Filename: tb_visual3.css
+
+*/
+
+/* HTML Styles */
+
+html {
+   background-image: url('tb_back5.png');
+ }
+ 
+
+/* Page Body Styles */
+
+body {
+   border-left: 3px solid rgb(169, 130, 88); /* Borde izquierdo */
+   border-right: 3px solid rgb(169, 130, 88); /* Borde derecho */
+   
+   /* Sombra en el borde derecho y su reflejo en el borde izquierdo */
+   box-shadow: 
+     25px 0px 35px rgb(53, 21, 0),  /* Sombra en el borde derecho */
+     -25px 0px 35px rgb(53, 21, 0); /* Sombra reflejada en el borde izquierdo */
+ }
+ 
+
+
+/* Main Styles */
+
+main {
+   background-image: url('tb_back7.png'); /* Imagen de fondo */
+   background-size: 100%; /* La imagen cubrirá todo el fondo */
+   background-repeat: no-repeat; /* Evita que la imagen se repita */
+   background-origin: padding-box; /* La imagen se posiciona respecto a la caja de padding */
+ 
+   /* Dos sombras internas (inset) con un desenfoque de 25 píxeles */
+   box-shadow: 
+     inset -10px -10px 25px rgb(71, 71, 71),  /* Primera sombra con desplazamiento hacia arriba y la izquierda */
+     inset 10px 10px 25px rgb(71, 71, 71);   /* Segunda sombra con desplazamiento hacia abajo y la derecha */
+ }
+
+ main header h1 {
+   text-shadow: 
+     1px 1px 0 rgb(221, 221, 221),   /* Primera sombra: sin desenfoque */
+     5px 5px 20px rgba(41, 41, 41, 0.9); /* Segunda sombra: con desenfoque de 20 píxeles */
+ }
+ 
+ 
+ /* Figure Box Styles */
+ 
+  figure {
+    margin: 10px auto;  /* Márgenes superior/inferior de 10 píxeles, y márgenes izquierdo/derecho automáticos */
+    width: 70%;         /* Ancho del 70% del contenedor */
+  }
+ 
+  figure img {
+    border-width: 25px; /* Ancho del borde de 25 píxeles */
+    border-style: solid; /* Estilo del borde sólido */
+    border-image: url('tb_frame.png') 60 stretch; /* Imagen del borde con tamaño de recorte de 60 píxeles estirado a lo largo de los lados */
+    display: block; /* Muestra la imagen como un bloque */
+    width: 100%; /* Ancho del 100% del contenedor */
+    
+    /* Aplicar un tono sepia del 80% con prefijo WebKit */
+    -webkit-filter: sepia(80%);
+    filter: sepia(80%);
+  }
+ 
+  figure figcaption {
+    font-family: 'Palatino Linotype', Palatino, 'Times New Roman', serif; /* Familia de fuentes */
+    font-style: italic; /* Estilo de fuente en cursiva */
+    padding: 10px 0; /* Relleno superior/inferior de 10 píxeles y relleno izquierdo/derecho de 0 píxeles */
+    text-align: center; /* Alineación del texto centrado */
+  }
+
+
+
+/* Article Styles */
+
+article {
+   background-image: url('tb_back6.png'); /* Imagen de fondo */
+   background-size: 15%; /* Tamaño de la imagen de fondo al 15% */
+   background-position: bottom right; /* Posiciona la imagen en la esquina inferior derecha */
+   background-repeat: no-repeat; /* Evita que la imagen se repita */
+   
+   border-right: 8px double rgb(147, 116, 68); /* Borde doble de 8 píxeles a la derecha */
+   border-bottom: 8px double rgb(147, 116, 68); /* Borde doble de 8 píxeles en la parte inferior */
+   
+   border-bottom-right-radius: 80px; /* Radio de 80 píxeles en la esquina inferior derecha */
+   
+   box-shadow: 
+     inset -10px -10px 25px rgba(184, 154, 112, 0.7); /* Sombra interior con desplazamientos de -10 píxeles y desenfoque de 25 píxeles */
+ }
+ 
+
+
+/* Footer Styles */
+
+footer {
+   background: linear-gradient(325deg, rgb(180, 148, 104) 20%, rgb(40, 33, 23) 60%);
+ }
+ 
