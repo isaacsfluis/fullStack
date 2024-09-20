@@ -156,11 +156,6 @@ ul.submenu:hover {
    display: block;
 }
 
-
-
-
-
-
 /* New Styles Added Below */
 
 /* ===============================
@@ -212,7 +207,7 @@ Desktop Styles: 769px and greater
 
    nav.horizontal::after {
       clear: both;
-      content: “”;
+      content: "";
       display: table;
    }
 
