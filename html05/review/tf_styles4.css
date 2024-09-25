@@ -1,0 +1,131 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author:   Luis Isaacs
+   Date:     
+      
+   Filename: tf_styles4.css
+
+   This file contains the screen styles used with the Trusted
+   Friends blog tips
+
+*/
+
+
+/* Import Basic Design Styles Used on All Screens */
+
+
+
+
+
+/* General Flex Styles */
+
+body > header > nav > ul {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0;
+   margin: 0;
+   list-style-type: none; /* Si deseas quitar las viñetas de los li */
+ }
+ 
+ body > header > nav > ul > li {
+   flex-basis: 25%; /* Cada li ocupará el 25% del ancho del contenedor (4 columnas) */
+   box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho total */
+ }
+
+ .tips{
+   display: flex;
+   padding: 0;
+   margin: 0;
+   align-items: stretch;
+ }
+
+#semibody{
+   display: flex;
+   padding: 0;
+   margin: 0;
+   align-items: stretch;
+   
+}
+
+.tips > article {
+   flex: 1.8; /* Ambos, article y aside, ocuparán el mismo espacio */
+   padding: 20px; /* Puedes ajustar el padding para darles espacio interno */
+   
+}
+
+.tips > aside {
+   flex: 1; /* Ambos, article y aside, crecerán en proporciones iguales */
+   padding: 20px;
+   
+}
+
+
+#right > section:nth-child(1)
+
+
+#right > section:nth-child(1) > article{
+   display: flex
+}
+
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+	
+@media (max-width: 480px) {
+   #semibody {
+      flex-direction: column-reverse; /* Hace que el #left quede de último */
+   }
+
+   #left, #right {
+      width: 100%; /* Ambos tomarán el 100% del ancho disponible */
+   }
+
+   .tips {
+      flex-direction: column; /* Apilará el article y aside en una sola columna */
+   }
+
+   .tips > article, .tips > aside {
+      width: 100%; /* Ambos ocuparán todo el ancho de la pantalla */
+      padding: 10px; /* Ajusta los espacios internos según sea necesario */
+   }
+
+   #left ul {
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+      gap: 10px; /* Espacio entre columnas */
+      padding: 0;
+      margin: 0;
+   }
+   
+   #left li {
+      flex: 1 1 22%; /* Cada elemento ocupará aproximadamente el 22% del ancho disponible */
+      list-style: none;
+      text-align: center; /* Opcional: centra el contenido */
+      margin: 5px 0; /* Espacio vertical entre los elementos */
+   }
+
+   /* barra de navegacion  */
+
+   a#navicon {
+      display: block;
+   }
+
+   nav.horizontal ul {
+      display: none;
+   }
+
+   a#navicon:hover+ul,
+   nav.horizontal ul:hover {
+      display: block;
+   }
+   
+}
+
+
+
