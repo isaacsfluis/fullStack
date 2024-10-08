@@ -4,7 +4,7 @@
    Case Problem 3
 
    Random Jane Austen Quote Generator
-   Author: 
+   Author: Luis Isaacs
    Date:   
    
    This script randomly generates a Jane Austen quote from
@@ -13,9 +13,10 @@
 
 */
 
+let aleatorio = Math.floor(Math.random()*10)
 
 function getQuote(n) {
-   var quotes = [
+   let quotes = [
    "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
    "I hate to hear you talk about all women as if they were fine ladies instead of rational creatures. None of us want to be in calm waters all our lives.",
    "Silly things do cease to be silly if they are done by sensible people in an impudent way.",
@@ -29,4 +30,11 @@ function getQuote(n) {
    ];
    
    return quotes[n];
+  
 }
+
+let leyenda = document.getElementById('temporal')
+
+console.log(leyenda)
+
+leyenda.innerHTML = getQuote(aleatorio)
