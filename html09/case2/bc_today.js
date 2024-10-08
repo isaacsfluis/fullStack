@@ -5,7 +5,7 @@
    Case Problem 2
 
    Today at the Union Script
-   Author: 
+   Author: Luis Isaacs
    Date:   
    
    This script uses the getEvent() function to return the
@@ -14,7 +14,12 @@
 
 */
 
+let thisDate = new Date('October 12, 2018')
+let dateString = thisDate.toLocaleDateString()
 
+let etiqueta = document.getElementById('date')
+
+etiqueta.innerText = dateString
 
 function getEvent(day) {
    var eventHTML;
@@ -174,3 +179,8 @@ function getEvent(day) {
    
    return eventHTML
 }
+
+const daySelect = thisDate.getDay();
+
+etiqueta.insertAdjacentHTML('afterend', getEvent(daySelect))
+
